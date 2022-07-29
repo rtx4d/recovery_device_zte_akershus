@@ -1,44 +1,46 @@
-## Compile
+# Device tree for Xiaomi Black Shark (codenamed _"shark"_)
 
-This TWRP should be built under omni-8.1 but it will work on pie only.
+==================================
+## Device specifications
 
-First checkout minimal twrp with omnirom tree:
+| Device                  | Xiaomi Black Shark                              |
+| ----------------------: | :---------------------------------------------- |
+| SoC                     | Qualcomm SDM845 Snapdragon 845                  |
+| CPU                     | 8x Qualcomm® Kryo™ 385 up to 2.8GHz             |
+| GPU                     | Adreno 630                                      |
+| Memory                  | 6GB / 8GB RAM (LPDDR4X)                         |
+| Shipped Android version | 8.0                                             |
+| Storage                 | 64GB / 128GB / UFS 2.1 flash storage            |
+| Battery                 | Non-removable Li-Po 3400 mAh                    |
+| Dimensions              | 75,4 x 161,62 x 9,25 mm                         |
+| Display                 | 2160 x 1080 (18:9), 5.99 inch                   |
+| Rear camera 1           | 12MP, Dual LED flash                            |
+| Rear camera 2           | 20MP                                            |
+| Front camera            | 20MP, 1080p 30 fps video                        |
 
-```
-repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
-repo sync
-```
+## Device picture
 
-Then add these projects to .repo/manifest.xml:
+![Xiaomi Black Shark](http://puu.sh/JdBwK/7dd9e45433.png?1 "Xiaomi Black Shark")
 
-```xml
-<project path="device/blackshark/shark" name="mauronofrio/android_device_blackshark_shark" remote="github" revision="android-8.1" />
-```
-
-To make all works you need to modify the buildinfo.sh in build/tools
-echo "ro.build.version.release=$PLATFORM_VERSION"
-echo "ro.build.version.security_patch=$PLATFORM_SECURITY_PATCH"
-to
-echo "ro.build.version.release_orig=$PLATFORM_VERSION"
-echo "ro.build.version.security_patch_orig=$PLATFORM_SECURITY_PATCH"
-
-And you need to increase the PLATFORM_VERSION to 16.1.0 in build/core/version_defaults.mk to override Google's anti-rollback features
-
-```
-
-Finally execute these:
-
-```
-. build/envsetup.sh
-export ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
-lunch omni_shark-eng 
-mka adbd recoveryimage 
-```
-
-To test it:
-
-```
-fastboot boot out/target/product/shark/recovery.img
-```
-## Thanks
-```
+### Copyright
+ ```
+  /*
+  *  Copyright (C) 2013-2022 The TWRP
+  *
+  *  Copyright (C) 2019-2022 The OrangeFox Recovery Project
+  *
+  * This program is free software: you can redistribute it and/or modify
+  * it under the terms of the GNU General Public License as published by
+  * the Free Software Foundation, either version 3 of the License, or
+  * (at your option) any later version.
+  *
+  * This program is distributed in the hope that it will be useful,
+  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  * GNU General Public License for more details.
+  *
+  * You should have received a copy of the GNU General Public License
+  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  *
+  */
+  ```

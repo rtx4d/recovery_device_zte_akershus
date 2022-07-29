@@ -22,16 +22,15 @@ $(call inherit-product, build/target/product/embedded.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/blackshark/shark/device.mk)
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := shark
 PRODUCT_NAME := omni_shark
-PRODUCT_BRAND := blackshark
-PRODUCT_MODEL := SKR-H0
-PRODUCT_MANUFACTURER := blackshark
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Black Shark
+PRODUCT_MANUFACTURER := Xiaomi
 
+TARGET_VENDOR_PRODUCT_NAME := shark
+TARGET_VENDOR_DEVICE_NAME := shark
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shark \
     BUILD_PRODUCT=shark \
