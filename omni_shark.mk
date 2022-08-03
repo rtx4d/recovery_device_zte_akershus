@@ -35,3 +35,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shark \
     BUILD_PRODUCT=shark \
     TARGET_DEVICE=shark
+
+# Inherit from device configuration
+$(call inherit-product, device/xiaomi/shark/device.mk)
