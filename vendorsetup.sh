@@ -19,8 +19,6 @@
 #
 FDEVICE="shark"
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
-	export LC_ALL=C
-	export ALLOW_MISSING_DEPENDENCIES=true
 	export PLATFORM_VERSION="16.1.0"
 	export TW_DEFAULT_LANGUAGE="en"
 	export OF_SCREEN_H=2160
