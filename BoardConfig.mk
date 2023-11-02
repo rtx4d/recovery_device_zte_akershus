@@ -25,7 +25,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-LOCAL_PATH := device/xiaomi/shark
+LOCAL_PATH := device/zte/akershus
 
 # Architecture
 TARGET_ARCH := arm64
@@ -60,8 +60,8 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 ifeq ($(FOX_BUILD_FULL_KERNEL_SOURCES),1)
   NEED_KERNEL_MODULE_SYSTEM := true
   TARGET_KERNEL_ARCH := arm64
-  TARGET_KERNEL_SOURCE := kernel/blackshark/shark
-  TARGET_KERNEL_CONFIG := shark-fox_defconfig
+  TARGET_KERNEL_SOURCE := kernel/zte/akershus
+  TARGET_KERNEL_CONFIG := akershus-fox_defconfig
   BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
   TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 else
@@ -149,7 +149,7 @@ AB_OTA_PARTITIONS += \
     dtbo
 
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
-TW_RECOVERY_ADDITIONAL_RELINK_FILES := ${OUT_DIR}/target/product/shark/system/lib64/android.hardware.boot@1.0.so
+TW_RECOVERY_ADDITIONAL_RELINK_FILES := ${OUT_DIR}/target/product/akershus/system/lib64/android.hardware.boot@1.0.so
 
 # Extras
 TW_INCLUDE_REPACKTOOLS := true

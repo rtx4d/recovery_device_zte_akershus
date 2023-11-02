@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_shark.mk
+    $(LOCAL_DIR)/omni_akershus.mk

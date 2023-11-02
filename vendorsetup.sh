@@ -17,11 +17,11 @@
 # 	
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="shark"
+FDEVICE="akershus"
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export PLATFORM_VERSION="16.1.0"
 	export TW_DEFAULT_LANGUAGE="en"
-	export OF_SCREEN_H=2160
+	export OF_SCREEN_H=2238
 	export FOX_DELETE_AROMAFM=1
 	export OF_CLASSIC_LEDS_FUNCTION=1
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1

@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := shark
+PRODUCT_RELEASE_NAME := akershus
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,15 +23,15 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := shark
-PRODUCT_NAME := omni_shark
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Black Shark
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEVICE := akershus
+PRODUCT_NAME := omni_akershus
+PRODUCT_BRAND := ZTE
+PRODUCT_MODEL := Axon 9 Pro
+PRODUCT_MANUFACTURER := Zte
 
-TARGET_VENDOR_PRODUCT_NAME := shark
-TARGET_VENDOR_DEVICE_NAME := shark
+TARGET_VENDOR_PRODUCT_NAME := akershus
+TARGET_VENDOR_DEVICE_NAME := akershus
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=shark \
-    BUILD_PRODUCT=shark \
-    TARGET_DEVICE=shark
+    PRODUCT_NAME=akershus \
+    BUILD_PRODUCT=akershus \
+    TARGET_DEVICE=akershus

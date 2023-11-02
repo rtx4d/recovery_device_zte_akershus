@@ -1,26 +1,26 @@
-# Device tree for Xiaomi Black Shark (codenamed _"shark"_)
+# Device tree for ZTE Axon 9 Pro (codenamed _"akershus"_)
 
 ==================================
 ## Device specifications
 
-| Device                  | Xiaomi Black Shark                              |
+| Device                  | ZTE Axon 9 Pro                                  |
 | ----------------------: | :---------------------------------------------- |
 | SoC                     | Qualcomm SDM845 Snapdragon 845                  |
 | CPU                     | 8x Qualcomm® Kryo™ 385 up to 2.8GHz             |
 | GPU                     | Adreno 630                                      |
-| Memory                  | 6GB / 8GB RAM (LPDDR4X)                         |
-| Shipped Android version | 8.0                                             |
-| Storage                 | 64GB / 128GB / UFS 2.1 flash storage            |
-| Battery                 | Non-removable Li-Po 3400 mAh                    |
-| Dimensions              | 75,4 x 161,62 x 9,25 mm                         |
-| Display                 | 2160 x 1080 (18:9), 5.99 inch                   |
+| Memory                  | 6GB RAM (LPDDR4X)                               |
+| Shipped Android version | 8.1                                             |
+| Storage                 | 64GB / UFS 2.1 flash storage                    |
+| Battery                 | Non-removable Li-Po 4000 mAh                    |
+| Dimensions              | 74,5 x 156,5 x 7,9 mm                           |
+| Display                 | 2160 x 1080 (18:9), 6.21 inch                   |
 | Rear camera 1           | 12MP, Dual LED flash                            |
 | Rear camera 2           | 20MP                                            |
 | Front camera            | 20MP, 1080p 30 fps video                        |
 
 ## Device picture
 
-![Xiaomi Black Shark](http://puu.sh/JdBwK/7dd9e45433.png?1 "Xiaomi Black Shark")
+![ZTE Axon 9 Pro](https://myzte.ru/upload/resize_cache/webp/iblock/64c/64c861df2609c563b827351edacc034e.webp "ZTE Axon 9 Pro")
 
 ### Copyright
  ```
